@@ -1,0 +1,164 @@
+<header  class="conatiner p-3 bg-dark text-white ">
+  <div class="container">
+    <div
+      class="
+        d-flex
+        flex-wrap
+        align-items-center
+        justify-content-center justify-content-lg-start
+      "
+    >
+      <a
+      [routerLink]="['/Home.html']"
+        class="
+          d-flex
+          align-items-center
+          mb-2 mb-lg-0
+          text-white text-decoration-none
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#ffc107"
+          class="bi bi-laptop"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+          />
+
+        </svg>
+      </a>
+
+      <ul
+        class="
+          nav
+          col-12 col-lg-auto
+          me-lg-auto
+          mb-2
+          justify-content-center
+          mb-md-0
+        "
+      >
+      <li><a [routerLink]="['/Home.html']" class="nav-link px-2 text-white">Home</a></li>
+      <li><a [routerLink]="['/Product.html']"  class="nav-link px-2 text-white">Product</a></li>
+      <li><a [routerLink]="['/AllProducts.html']"  class="nav-link px-2 text-white">Products</a></li>
+      <li><a [routerLink]="['/faqs.html']"  class="nav-link px-2 text-white">FAQs</a></li>
+      <li><a [routerLink]="['/about.html']"  class="nav-link px-2 text-white">About</a></li>
+      </ul>
+
+      <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input
+          type="search"
+          class="form-control form-control-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form> -->
+
+      <span style="border-bottom: 3px solid #ffc107; border-radius: 5px; padding: 0  5px 0 5px;" class="font-monospace ">Tural Suleymanli</span>
+      <a style="text-decoration: none; margin-right: 25px; margin-left: 10px; border-radius: 50%;" [routerLink]="['/profile.html']">
+        <img  class="" style="border: 3px solid #ffc107; border-radius: 50%;  height: 50px; width: 50px;"   src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+      </a>
+      <button [routerLink]="['/addtobag.html']" type="button" class="btn btn-warning position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+
+        </svg>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+
+    </div>
+  </div>
+</header>
+<main class="container" style="min-height: 500px;">
+
+    <!-- <div class="bd-example">
+      <address>
+        <strong>Twitter, Inc.</strong><br>
+        1355 Market St, Suite 900<br>
+        San Francisco, CA 94103<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+      </address>
+      <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:">ecommerce@example.com</a>
+      </address>
+    </div> -->
+
+
+    <!-- İnput counter start -->
+    <!-- <div class="" style="width: max-content;">
+      <div class="number d-flex">
+        <div class="minus btn btn-warning d-flex justify-content-center" style="width: 10px;">-</div>
+        <input style="width: 40px; padding-left:10px;" type="text" value="1"/>
+        <div class="plus btn btn-warning d-flex justify-content-center" style="width: 10px;">+</div>
+      </div>
+
+    </div> -->
+    <!-- input counter end -->
+    <div class="col-12 row mt-3 ">
+      <div class="col-8   ">
+        <div class=" col-12 col-sm-12 mt-1 mb-1 products ">
+          <div class="card col-12 border border-3 border-dark">
+            <div class="card-body d-flex align-items-center col-12">
+                  <div class="d-flex align-items-center col-7">
+                      <img style="width: 5vw;" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-gold-select?wid=470&hei=556&fmt=png-alpha&.v=1631652954000" class="d-block " alt="...">
+
+                  <h5 class="card-title"><a style="text-decoration: none; color: #212529;" [routerLink]="['/Product.html']">Iphone 13 Pro Max</a></h5>
+                  </div>
+
+
+                  <div class=" d-flex align-items-center justify-content-center col-5  ">
+                      <div class="alert alert-warning d-flex justify-content-between align-items-center w-100" role="alert">
+                          <h5 class="card-text text-muted  ">Price</h5>
+                          <h4>1099$</h4>
+                          <div class="" style="width: max-content;">
+                            <div class="number d-flex ">
+                              <!-- <div class="minus btn btn-warning d-flex justify-content-center rounded-0 rounded-start" style="width: 10px;">-</div>
+                              <input class="border border-2 border-warning" style="width: 40px; padding-left:10px;" type="text" value="1"/>
+                              <div class="plus btn btn-warning d-flex justify-content-center rounded-0 rounded-end" style="width: 10px;">+</div> -->
+
+                              <label for="counter-addtobag" class=" btn btn-warning d-flex justify-content-center rounded-0 rounded-start">Count</label>
+                              <input type="number" id="counter-addtobag"  value="1" min="1" class="rounded-end" style="width: 50px;">
+
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4  border border-3 border-dark mt-1 mb-1  rounded p-2 ">
+        <div class="mt-2" style="border-bottom:1px solid #212529 ;">
+          <h5 class="dark">Iphone 13 Pro Max
+            <h6 class="card-text text-muted">Count: <span style="color: #212529;">1</span></h6>
+            <h6 class="card-text text-muted mb-2">Price: <span style="color: #212529;">1099$</span></h6>
+          </h5>
+        </div>
+
+
+
+
+        <div class="mt-2 p-1 border border-3 border-warning rounded col-12 d-flex justify-content-between align-items-center">
+          <h5 class="col-10 card-text text-muted">Total Price: <span style="color: #212529;">1099$</span></h5>
+          <div [routerLink]="['/Login.html']" class="col-2 btn btn-sm btn-warning d-flex justify-content-between align-items-center">
+            Buy
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+

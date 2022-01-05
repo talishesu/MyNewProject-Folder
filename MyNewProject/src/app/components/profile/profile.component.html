@@ -1,0 +1,147 @@
+<header  class="conatiner p-3 bg-dark text-white ">
+  <div class="container">
+    <div
+      class="
+        d-flex
+        flex-wrap
+        align-items-center
+        justify-content-center justify-content-lg-start
+      "
+    >
+      <a
+      [routerLink]="['/Home.html']"
+        class="
+          d-flex
+          align-items-center
+          mb-2 mb-lg-0
+          text-white text-decoration-none
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          fill="#ffc107"
+          class="bi bi-laptop"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+          />
+        </svg>
+      </a>
+
+      <ul
+        class="
+          nav
+          col-12 col-lg-auto
+          me-lg-auto
+          mb-2
+          justify-content-center
+          mb-md-0
+        "
+      >
+      <li><a [routerLink]="['/Home.html']" class="nav-link px-2 text-white">Home</a></li>
+      <li><a [routerLink]="['/Product.html']"  class="nav-link px-2 text-white">Product</a></li>
+      <li><a [routerLink]="['/AllProducts.html']"  class="nav-link px-2 text-white">Products</a></li>
+      <li><a [routerLink]="['/faqs.html']"  class="nav-link px-2 text-white">FAQs</a></li>
+      <li><a [routerLink]="['/about.html']"  class="nav-link px-2 text-white">About</a></li>
+      </ul>
+
+      <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input
+          type="search"
+          class="form-control form-control-dark"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form> -->
+      <span style="border-bottom: 3px solid #ffc107; border-radius: 5px; padding: 0  5px 0 5px;" class="font-monospace ">Tural Suleymanli</span>
+      <a style="text-decoration: none; margin-right: 25px; margin-left: 10px; border-radius: 50%;" [routerLink]="['/profile.html']">
+        <img  class="" style="border: 3px solid #ffc107; border-radius: 50%;  height: 50px; width: 50px;"   src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+      </a>
+      <button [routerLink]="['/addtobag.html']" type="button" class="btn btn-warning position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+
+        </svg>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+
+    </div>
+  </div>
+</header>
+<main class="container pt-3" style="min-height: 500px;">
+  <div class="col-12">
+
+   <!-- <div class="row">
+     <div class="col bg-dark d-flex justify-content-center align-items-center ">
+       <button class="btn btn-Dark rounded-circle " >
+         <img   class=" border border-3 rounded-circle" style="height: 250px; width: 250px;"   src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+       </button>
+
+
+
+     </div>
+
+
+
+     <div class="col-8 bg-success">
+     </div>
+   </div> -->
+
+   <div class="container bootstrap snippets bootdey ">
+   <div class="row">
+       <!-- left column -->
+       <div class="col-md-4">
+         <div class="text-center w-75">
+           <img src="https://images.pexels.com/photos/853199/pexels-photo-853199.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="avatar img-circle img-thumbnail" alt="avatar" style="padding: 0; max-width: 310px; max-height:310px; min-width: 250px; min-height: 250px;" >
+           <h6>Upload photo</h6>
+
+           <input type="file" class="form-control  ">
+         </div>
+       </div>
+       <div class="col-md-1"></div>
+
+       <!-- edit form column -->
+       <div class="col-md-7 personal-info">
+
+         <h3>Personal info</h3>
+
+         <form class="form-horizontal" role="form">
+           <div class="form-group mt-2">
+             <label class="col-lg-3 control-label">First name:</label>
+             <div class="col-lg-8">
+               <input class="form-control" type="text" value="Tural">
+             </div>
+           </div>
+           <div class="form-group mt-2">
+             <label class="col-lg-3 control-label">Last name:</label>
+             <div class="col-lg-8">
+               <input class="form-control" type="text" value="Suleymanli">
+             </div>
+           </div>
+           <div class="form-group mt-2">
+             <label class="col-lg-3 control-label">Email:</label>
+             <div class="col-lg-8">
+               <input class="form-control" type="text" value="ecommerce@gmail.com">
+             </div>
+           </div>
+
+           <div class="form-group mt-2">
+             <label class="col-lg-3 control-label">Change Password:</label>
+             <div class="col-lg-8">
+               <input class="form-control" type="password" value="123456789">
+             </div>
+           </div>
+
+
+           <div class="form-group mt-3">
+             <button type="submit" class="btn btn-warning">Update</button>
+
+            </div>
+
+            <br>
